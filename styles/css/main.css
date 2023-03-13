@@ -129,8 +129,6 @@ img {
     transform: scale(0.8);
 }
 
-
-
 .btn--dark {
 
     border: none;
@@ -154,11 +152,11 @@ img {
 
 .main-nav {
     padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-
 }
 
 .main-logo__link-wrap {
