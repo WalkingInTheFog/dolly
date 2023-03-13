@@ -101,7 +101,7 @@ img {
 .btn {
     display: inline-block;
     padding: 22px 55px;
-
+    margin: 0;
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -290,8 +290,13 @@ img {
 }
 
 /*----------------------------------------lead block----------------------------------------------------*/
+.index-lead {
+    padding-top: 200px;
+}
 
 .index-lead__title {
+    margin-top: 0;
+    margin-bottom: 60px;
     max-width: 530px;
     font-weight: 700;
     font-size: 60px;
