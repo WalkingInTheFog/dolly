@@ -238,3 +238,12 @@ img {
     background-image: url('../../images/basket-icon.svg');
     background-size: 16px 20px;
 }
+
+/*----------------------------------------lead block----------------------------------------------------*/
+
+.index-lead__title {
+    max-width: 530px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.333;
+}
