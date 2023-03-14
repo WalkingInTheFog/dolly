@@ -87,7 +87,6 @@ img {
     color: var(--black-400);
     background-color: var(--white);
     z-index: 10;
-    overflow: hidden;
 
 }
 
@@ -96,7 +95,7 @@ img {
     position: absolute;
     left: 48%;
     top: 0;
-    width: 100%;
+    width: 52%;
     height: 1029px;
     background-color: var(--blue-300);
     z-index: -1;
@@ -161,7 +160,6 @@ img {
     opacity: 1;
     transform: scale(0.8);
 }
-
 
 /*---------------------------main-nav----------------------------------------*/
 
@@ -318,10 +316,14 @@ img {
     content: '';
     position: absolute;
     left: 0;
-    top: 280px
+    top: 440px;
+    width: 19px;
+    height: 120px;
+    background-image: url('../../images/lead-arrow-down.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 19px 120px;
 }
-
-
 
 .index-lead__title {
     margin-top: 0;
