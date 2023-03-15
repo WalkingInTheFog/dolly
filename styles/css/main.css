@@ -345,3 +345,53 @@ img {
     font-size: 60px;
     line-height: 1.333;
 }
+
+/*--------------------------------winter collection------------------------------------*/
+
+.winter-collection {
+    position: relative;
+    margin-bottom: 133px;
+
+    min-height: 501px;
+    display: flex;
+    padding-top: 93px;
+
+    background-image: url('../../images/winter-look.png');
+    background-repeat: no-repeat;
+    background-size: 664px 501px;
+    background-position: 0 0;
+}
+
+.winter-collection::before {
+    content: 'зима';
+    position: absolute;
+    top: -396px;
+    left: -218px;
+    color: var(--gray-300);
+
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 1.36;
+    text-transform: uppercase;
+
+    z-index: -2;
+
+}
+
+.winter-collection__inner {
+    margin-left: auto;
+
+}
+
+.winter-collection__title {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.winter-collection__desc {
+    margin: 0;
+    margin-bottom: 50px;
+
+}
