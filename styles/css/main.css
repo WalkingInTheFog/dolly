@@ -478,7 +478,7 @@ img {
     display: flex;
 }
 
-/* .every-day__big-photo {} */
+
 
 .every-day__slider-thumb-wrapper {
     grid-area: slider;
@@ -527,7 +527,7 @@ img {
     margin-right: 0;
 }
 
-.every-day__slider-img {}
+
 
 .every-day__slider-indication {
     display: flex;
@@ -566,12 +566,23 @@ img {
 }
 
 .strict__inner {
+    position: relative;
     width: 577px;
     max-width: 577px;
     margin-left: auto;
     padding-left: 125px;
     padding-right: 64px;
     padding-top: 93px;
+}
+
+.strict__inner::after {
+    content: '';
+    position: absolute;
+    left: -454px;
+    top: -49px;
+    width: 1px;
+    height: 276px;
+    background-color: var(--black);
 }
 
 .section-title {
