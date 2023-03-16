@@ -551,3 +551,38 @@ img {
 .every-day__slider-control-btn:last-child {
     margin-right: 0;
 }
+
+/*-----------------------strict------------------------------*/
+
+.strict {
+    display: flex;
+    min-height: 545px;
+    margin-bottom: 147px;
+
+    background-image: url('../../images/strict-collection.png');
+    background-repeat: no-repeat;
+    background-size: 591px 545px;
+    background-position: left center;
+}
+
+.strict__inner {
+    width: 577px;
+    max-width: 577px;
+    margin-left: auto;
+    padding-left: 125px;
+    padding-right: 64px;
+    padding-top: 93px;
+}
+
+.section-title {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.strict__desc {
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-size: 20px;
+    line-height: 1.35;
+}
