@@ -395,3 +395,157 @@ img {
     margin-bottom: 50px;
 
 }
+
+/*-------------------------every-day--------------------------------*/
+.every-day {
+    display: grid;
+    grid-template-columns: 767px 403px;
+    grid-template-rows: min-content 1fr;
+    grid-template-areas: 'text big-photo'
+        'slider big-photo';
+}
+
+.every-day__inner {
+    grid-area: text;
+    align-self: self-start;
+
+    position: relative;
+    width: 533px;
+    max-width: 533px;
+    min-width: 533px;
+
+    margin-left: auto;
+    padding-top: 65px;
+    padding-left: 79px;
+    padding-right: 123px;
+    padding-bottom: 66px;
+
+}
+
+.every-day__inner::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -161px;
+    height: 513px;
+    width: 1px;
+    background-color: var(--black);
+
+}
+
+.every-day__inner::after {
+    content: "D";
+    position: absolute;
+    left: -270px;
+    top: 205px;
+
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 1.36;
+    color: var(--gray-300);
+
+}
+
+.every-day__title {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.every-day__desc {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.35;
+
+}
+
+.every-day__big-photo-wrapper {
+    grid-area: big-photo;
+    overflow: hidden;
+    width: 403px;
+    height: 632px;
+
+}
+
+.every-day__big-photo-list {
+    position: relative;
+    left: 0;
+    width: 1612px;
+    height: 632px;
+    display: flex;
+}
+
+/* .every-day__big-photo {} */
+
+.every-day__slider-thumb-wrapper {
+    grid-area: slider;
+    position: relative;
+    z-index: 1;
+    width: 368px;
+    max-width: 368px;
+    margin-right: -23px;
+    margin-left: auto;
+
+}
+
+.every-day__slider-thumb-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 27px;
+}
+
+.every-day__slider-thumb-item {
+    max-width: 116px;
+    max-height: 155px;
+
+
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    transition: transform 0.5s;
+    animation-fill-mode: backwards;
+
+}
+
+.every-day__slider-thumb-item:hover,
+.every-day__slider-thumb-item:focus {
+
+    transform: scale(1.2);
+}
+
+.every-day__slider-thumb-item:active {
+
+    transform: scale(1);
+}
+
+.every-day__slider-thumb-item:last-child {
+    margin-right: 0;
+}
+
+.every-day__slider-img {}
+
+.every-day__slider-indication {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.every-day__slider-indication-item {
+    margin-right: 11px;
+    border: none;
+    width: 7px;
+    height: 7px;
+    background-color: var(--gray-400);
+    border-radius: 50%;
+}
+
+.every-day__slider-indication-item--active {
+    background-color: var(--black-400);
+}
+
+.every-day__slider-control-btn:last-child {
+    margin-right: 0;
+}
