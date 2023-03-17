@@ -801,7 +801,7 @@ img {
     line-height: 1.7;
     letter-spacing: 0.07em;
     text-decoration: none;
-
+    text-transform: uppercase;
     color: var(--black);
 }
 
