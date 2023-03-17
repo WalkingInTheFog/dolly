@@ -702,8 +702,6 @@ img {
     opacity: 1;
 }
 
-.product-cart {}
-
 .popular-slider-controls {
     display: flex;
     justify-content: space-between;
@@ -847,7 +845,6 @@ img {
     margin-right: 10px;
 }
 
-.soc-list__link {}
 
 .soc-list__img {
     width: 18px;
