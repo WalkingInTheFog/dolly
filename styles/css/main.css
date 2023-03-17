@@ -90,7 +90,7 @@ img {
 
 }
 
-.page-body::after {
+.page-body--index::after {
     content: '';
     position: absolute;
     left: 48%;
