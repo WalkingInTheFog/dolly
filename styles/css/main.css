@@ -750,3 +750,119 @@ img {
     padding-left: 50px;
     padding-right: 50px;
 }
+
+/*------------------------------footer------------------------------------------*/
+.main-footer {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    min-height: 139px;
+    background-color: var(--blue-300);
+}
+
+.main-footer__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-logo__link-wrap--footer {
+    margin-right: auto;
+}
+
+/* 
+.main-logo__link-wrap {}
+
+.main-logo {}
+ */
+
+
+.nav-list-footer {
+    max-width: 670px;
+    margin-left: -25px;
+    margin-right: -25px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.nav-list-footer__item {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.nav-list-footer__link {
+    position: relative;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+
+    color: var(--black);
+}
+
+.nav-list-footer__link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--black);
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+
+}
+
+.nav-list-footer__link:hover::after,
+.nav-list-footer__link:focus::after {
+
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.nav-list-footer__link:active,
+.nav-list-footer__link:active:after {
+    opacity: 0.6;
+}
+
+.soc-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 91px;
+    margin-right: -10px;
+}
+
+.soc-list__item {
+    margin-right: 10px;
+}
+
+.soc-list__link {}
+
+.soc-list__img {
+    width: 18px;
+    height: 18px;
+}
+
+.soc-list__link:hover .soc-list__img,
+.soc-list__link:focus .soc-list__img {
+
+    transform: scale(1.2);
+
+}
+
+.soc-list__link:active .soc-list__img {
+
+    transform: scale(0.8);
+
+}
