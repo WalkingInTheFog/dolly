@@ -83,7 +83,7 @@
 
             <form class="filters-form" action="https://echo.htmlacademy.ru/" name="filters-form" method="get">
 
-                <fieldset class="filters-form__legend">
+                <fieldset class="filters-form__filedset">
 
                     <legend class="filters-form__title">КАТЕГОРИИ</legend>
 
@@ -198,6 +198,41 @@
                         <label for="filters-boots-2">Сапоги</label>
 
                     </p>
+
+                </fieldset>
+
+                <fieldset class="filters-form__filedset">
+
+                    <legend class="filters-form__title">Цена</legend>
+
+                    <div class="filters-form__range-fiter">
+
+                        <div class="filters-form__range-line">
+
+                            <div class="filters-form__range-bar"
+                                style="width: 67%; height: 2px; background-color: #00ca74;"></div>
+
+                            <div class="filters-form__range-pin-min" style="left: 0; top: -10px;" tabindex="0"></div>
+
+                            <div class="filters-form__range-pin-max" style="top:-10px; left: 65%;" tabindex="0"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="filters-form__range-fiter-controls">
+                        <!--  дописать классы этой формы, отсюда -->
+                        <label class="range-label">
+                            От <input class="range-field" type="text" name="start-price" placeholder="0">
+                        </label>
+
+                        <label class="range-label">
+                            До <input class="range-field" type="text" name="end-price" id="end-price"
+                                placeholder="150 000">
+                        </label>
+                    </div>
+
+
 
                 </fieldset>
 
