@@ -951,7 +951,11 @@ img {
     background-color: var(--blue-300);
 }
 
-/*--------------range------------------*/
+.filters-form__category-input:disabled + .filters-form__category-label {
+    opacity: 0.3;
+}
+
+/*------------filter--range------------------*/
 
 .filters-form__title--range {
     margin-bottom: 24px;
@@ -1016,6 +1020,10 @@ img {
 
 /*----------------filters--brand-------------*/
 
+.filters-form__filedset--brand {
+    margin-bottom: 22px;
+}
+
 .filters-form__title--brand {
     margin-bottom: 26px;
 }
@@ -1023,6 +1031,7 @@ img {
 .filters-form__brand-search-wrapper {
     position: relative;
     margin: 0;
+    margin-bottom: 27px;
 }
 
 .filters-form__brand-search-wrapper:before {
@@ -1070,4 +1079,50 @@ img {
     font-size: 12px;
     line-height: 1.333;
     color: var(--black);
+}
+
+.filters-form__brand-wrapper {
+    margin-left: 9px;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    column-gap: 30px;
+}
+
+.filters-form__brand-item {}
+
+.filters-form__brand-input {}
+
+.filters-form__brand-label {
+    position: relative;
+    padding-left: 22px;
+
+    font-size: 12px;
+    line-height: 1.333;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: var(--black);
+    cursor: pointer;
+}
+
+.filters-form__brand-label::before {
+    content: "";
+    visibility: hidden;
+    position: absolute;
+    left: 5px;
+    top: 4px;
+    width: 10px;
+    height: 8px;
+    background-image: url('../../images/icon-done.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 10px 8px;
+}
+
+.filters-form__brand-input:checked + .filters-form__brand-label::before {
+    visibility: visible;
+}
+
+.filters-form__brand-input:disabled + .filters-form__brand-label {
+    opacity: 0.3;
 }
