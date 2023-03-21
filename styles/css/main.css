@@ -102,7 +102,6 @@ img {
     z-index: -1;
 }
 
-
 .container {
 
     max-width: 1170px;
@@ -174,8 +173,9 @@ img {
 }
 
 
-.align-center {
-    text-align: center;
+.page-body__catalog-page .main-header {
+
+    margin-bottom: 50px;
 }
 
 /*---------------------------main-nav----------------------------------------*/
@@ -869,4 +869,29 @@ img {
 
 .smile {
     font-size: 68px;
+}
+
+/*-------------------------------catalog---------------------------*/
+
+.catalog-main {
+    display: grid;
+    grid-template-columns: 196px 898px;
+    column-gap: 76px;
+}
+
+.catalog-filters {
+    grid-column: 1/2;
+}
+
+.catalog-wrapper {
+    grid-column: 2/3;
+
+
+}
+
+.catalog-list {
+
+    display: grid;
+    grid-template-columns: 286px 286px 286px;
+    column-gap: 20px;
 }
