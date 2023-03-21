@@ -1126,3 +1126,12 @@ img {
 .filters-form__brand-input:disabled + .filters-form__brand-label {
     opacity: 0.3;
 }
+
+.filters-form__btn {
+    max-width: 196px;
+    width: 196px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    background-color: transparent;
+}
