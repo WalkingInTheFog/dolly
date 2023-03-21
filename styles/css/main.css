@@ -15,8 +15,10 @@
     --gray-350: #E0E0E0;
     --gray-400: #C4C4C4;
     --gray-410: #CECBC8;
+    --gray-430: #cdcdcd;
     --gray-420: #D6D6D6;
     --gray-500: #757575;
+
 }
 
 *,
@@ -945,4 +947,67 @@ img {
 
 .filters-form__category-input:checked + .filters-form__category-label {
     background-color: var(--blue-300);
+}
+
+/*--------------range------------------*/
+
+.filters-form__title--range {
+    margin-bottom: 24px;
+}
+
+.filters-form__range-fiter {
+    max-width: 196px;
+    padding-left: 9px;
+    margin-bottom: 22px;
+}
+
+.filters-form__range-line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: var(--gray-430);
+}
+
+.filters-form__range-pin-min,
+.filters-form__range-pin-max {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+
+    background-color: var(--black-500);
+    cursor: pointer;
+
+}
+
+.filters-form__range-fiter-controls {
+    max-width: 196px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters-form__range-label {
+    font-size: 12px;
+    line-height: 1.333;
+    color: var(--black);
+    text-transform: lowercase;
+}
+
+.filters-form__range-field {
+    max-width: 44px;
+    margin-left: 8px;
+    border: none;
+    border-bottom: 1px solid var(--gray-430);
+
+    font-size: 12px;
+    line-height: 1.333;
+    color: var(--black);
+    text-align: center;
+
+}
+
+.filters-form__range-field::placeholder {
+    font-size: 12px;
+    line-height: 1.333;
+    color: var(--black);
 }
