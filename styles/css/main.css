@@ -895,3 +895,54 @@ img {
     grid-template-columns: 286px 286px 286px;
     column-gap: 20px;
 }
+
+/*-----------------filters----------*/
+
+.filters-form__filedset {
+    border: none;
+    padding: 0;
+    margin-bottom: 50px;
+
+}
+
+.filters-form__title {
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+    padding-left: 9px;
+    color: var(--black-350);
+    letter-spacing: 0.07em;
+
+    text-transform: uppercase;
+}
+
+.filters-form__category-item {
+    margin: 0;
+    margin-bottom: 7px;
+
+}
+
+
+
+.filters-form__category-label {
+    display: block;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 11px;
+    padding-bottom: 9px;
+    color: var(--gray-500);
+    cursor: pointer;
+}
+
+.filters-form__category-label:hover,
+.filters-form__category-label:focus {
+    background-color: var(--blue-300);
+}
+
+.filters-form__category-label:active {
+    background-color: var(--blue-400);
+}
+
+.filters-form__category-input:checked + .filters-form__category-label {
+    background-color: var(--blue-300);
+}
