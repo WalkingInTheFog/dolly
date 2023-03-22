@@ -656,8 +656,6 @@ img {
     justify-content: flex-start;
     align-items: center;
 
-
-
     text-align: center;
     cursor: pointer;
     transition: all 0.5s;
@@ -901,6 +899,7 @@ img {
     display: grid;
     grid-template-columns: 286px 286px 286px;
     column-gap: 20px;
+    row-gap: 70px;
 }
 
 /*-----------------filters----------*/
