@@ -101,9 +101,10 @@ img {
     left: 48%;
     top: 0;
     width: 52%;
-    height: 1029px;
+    height: 100%;
     background-color: var(--blue-300);
     z-index: -1;
+    max-height: 1029px;
 }
 
 .container {
@@ -1147,3 +1148,7 @@ img {
 
     background-color: transparent;
 }
+
+/*--------------------------product-cart--catalog---------------------------------*/
+
+.product-cart--catalog {}
