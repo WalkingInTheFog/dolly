@@ -1127,6 +1127,18 @@ img {
     opacity: 0.3;
 }
 
+.filters-form__brand-label:hover,
+.filters-form__brand-label:focus {
+
+    opacity: 0.6;
+}
+
+
+.filters-form__brand-label:active {
+
+    opacity: 0.3;
+}
+
 .filters-form__btn {
     max-width: 196px;
     width: 196px;
