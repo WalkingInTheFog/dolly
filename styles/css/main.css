@@ -107,6 +107,18 @@ img {
     max-height: 1029px;
 }
 
+.page-body--product-page::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background-color: var(--blue-300);
+    z-index: -1;
+    max-height: 1010px;
+}
+
 .container {
 
     max-width: 1200px;
