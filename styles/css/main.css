@@ -1282,3 +1282,95 @@ img {
     border: none;
     padding: 10px 17px;
 }
+
+/*---------------------------------------------------------*/
+.deployed-product__gallery {}
+
+.deployed-product__gallery-window {
+    position: relative;
+    width: 658px;
+    height: 499px;
+    overflow: hidden;
+    margin-bottom: 31px;
+}
+
+.deployed-product__gallery-list {
+    width: 1974px;
+    display: flex;
+}
+
+.deployed-product__gallery-item {
+    width: 658px;
+    min-width: 658px;
+    max-width: 658px;
+
+    height: 499px;
+    min-height: 499px;
+    max-height: 499px;
+}
+
+.deployed-product__gallery-window-btns {
+    position: absolute;
+    left: 0;
+    top: 215px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.deployed-product__gallery-window-btns-left {
+    width: 12px;
+    height: 19px;
+    border: none;
+    background-color: transparent;
+    background-image: url('../../images/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 12px 19px;
+    background-position: center center;
+    transform: rotate(180deg);
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.deployed-product__gallery-window-btns-right {
+    width: 12px;
+    height: 19px;
+    border: none;
+    background-color: transparent;
+    background-image: url('../../images/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 12px 19px;
+    background-position: center center;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.deployed-product__gallery-window-btns-left:hover,
+.deployed-product__gallery-window-btns-left:focus {
+
+    transform: rotate(180deg) scale(1.5);
+}
+
+.deployed-product__gallery-window-btns-left:active {
+    transform: rotate(180deg) scale(0.8);
+}
+
+.deployed-product__gallery-window-btns-right:hover,
+.deployed-product__gallery-window-btns-right:focus {
+
+    transform: scale(1.5);
+}
+
+.deployed-product__gallery-window-btns-right:active {
+    transform: scale(0.8);
+}
+
+.deployed-product__gallery-img-wrapper {}
+
+.deployed-product__gallery-img {}
+
+.deployed-product__gallery-img-toggle-wrapper {}
+
+.deployed-product__gallery-img-toggle-btn {}
