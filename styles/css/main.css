@@ -1463,9 +1463,32 @@ img {
     font-weight: 400;
 }
 
-.product-desc__rating {}
 
-.product-desc__rating--four-stars {}
+.product-desc__rating-fav-wrapper {
+    display: flex;
+}
+
+.product-desc__rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 112px;
+    height: 19px;
+    margin-right: 45px;
+}
+
+.product-desc__rating-star {
+    fill: var(--gray-350);
+    margin-right: 5px;
+}
+
+.product-desc__rating--one-stars .product-desc__rating-star:nth-child(1),
+.product-desc__rating--two-stars .product-desc__rating-star:nth-child(-n+2),
+.product-desc__rating--three-stars .product-desc__rating-star:nth-child(-n+3),
+.product-desc__rating--four-stars .product-desc__rating-star:nth-child(-n+4),
+.product-desc__rating--five-stars .product-desc__rating-star:nth-child(-n+5) {
+    fill: var(--black-400);
+}
 
 .product-desc__favorites-link {}
 
