@@ -1466,6 +1466,7 @@ img {
 
 .product-desc__rating-fav-wrapper {
     display: flex;
+    margin-bottom: 32px;
 }
 
 .product-desc__rating {
@@ -1490,7 +1491,31 @@ img {
     fill: var(--black-400);
 }
 
-.product-desc__favorites-link {}
+.product-desc__favorites-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+    line-height: 1.37;
+}
+
+.product-desc__favorites-link:hover,
+.product-desc__favorites-link:focus {
+    text-decoration: underline;
+}
+
+.product-desc__favorites-link:active {
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.product-desc__favorites-link-img {
+    margin-right: 15px;
+}
+
+.product-desc__favorites-link--active .product-desc__favorites-link-img {
+    fill: var(--black);
+}
 
 .product-desc__sizes {}
 
