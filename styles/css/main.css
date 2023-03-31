@@ -1545,14 +1545,28 @@ img {
     color: var(--black);
     text-decoration: none;
     cursor: pointer;
+    transition: all 0.5s;
+}
+
+.product-desc__sizes-list-label:hover,
+.product-desc__sizes-list-label:focus {
+    transform: scale(1.2);
+}
+
+.product-desc__sizes-list-label:active {
+    transform: scale(0.8);
 }
 
 .product-desc__sizes-list-checkbox:checked + .product-desc__sizes-list-label {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+.product-desc__sizes-list-checkbox:disabled + .product-desc__sizes-list-label {
+    opacity: 0.1;
+}
+
 .product-desc__table-sises-link {
-    display: block;
+    display: inline-block;
     margin-bottom: 36px;
     line-height: 1.37;
     text-decoration: underline;
