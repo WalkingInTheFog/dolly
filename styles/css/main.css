@@ -1517,15 +1517,43 @@ img {
     fill: var(--black);
 }
 
-.product-desc__sizes {}
 
-.product-desc__sizes-list {}
+.product-desc__sizes {
+    display: flex;
+    align-items: center;
+}
 
-.product-desc__sizes-list-item {}
+.product-desc__sizes-label {
+    margin: 0;
+    margin-right: 23px;
+    color: var(--black);
+}
 
-.product-desc__sizes-list-label {}
+.product-desc__sizes-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3px;
+}
+
+.product-desc__sizes-list-item {
+    margin-right: 11px;
+}
+
+.product-desc__sizes-list-label {
+    display: block;
+    padding: 8px 11px;
+    color: var(--black);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.product-desc__sizes-list-checkbox:checked + .product-desc__sizes-list-label {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 
 .product-desc__table-sises-link {}
+
+
 
 .product-desc__colors {}
 
