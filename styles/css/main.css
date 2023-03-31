@@ -1559,6 +1559,16 @@ img {
     color: var(--blue-400);
 }
 
+.product-desc__table-sises-link:hover,
+.product-desc__table-sises-link:focus {
+    opacity: 0.5;
+}
+
+
+.product-desc__table-sises-link:active {
+    opacity: 0.1;
+}
+
 
 
 .product-desc__colors {}
