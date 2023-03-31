@@ -1585,13 +1585,50 @@ img {
 
 
 
-.product-desc__colors {}
+.product-desc__colors {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
 
-.product-desc__colors-list {}
+.product-desc__colors-label {
+    margin: 0;
+    margin-right: 17px;
 
-.product-desc__colors-list-item {}
+}
 
-.product-desc__colors-list-label {}
+.product-desc__colors-list {
+    display: flex;
+}
+
+.product-desc__colors-list-item {
+    margin-right: 9px;
+}
+
+.product-desc__colors-list-label {
+    display: block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.product-desc__colors-list-label:focus,
+.product-desc__colors-list-label:hover {
+
+    transform: scale(1.2);
+
+}
+
+.product-desc__colors-list-label:active {
+
+    transform: scale(0.8);
+
+}
+
+.product-desc__colors-checkbox:checked + .product-desc__colors-list-label {
+    outline: 2px solid var(--blue-400);
+}
 
 .product-desc__common-info-list {}
 
