@@ -1551,7 +1551,13 @@ img {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.product-desc__table-sises-link {}
+.product-desc__table-sises-link {
+    display: block;
+    margin-bottom: 36px;
+    line-height: 1.37;
+    text-decoration: underline;
+    color: var(--blue-400);
+}
 
 
 
