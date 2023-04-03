@@ -1636,6 +1636,10 @@ img {
     color: var(--black);
 }
 
+.product-desc__common-info-table tr {
+    margin-bottom: 13px;
+}
+
 .product-desc__common-info-table-termin {
     padding-right: 15px;
 }
