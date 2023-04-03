@@ -1630,8 +1630,33 @@ img {
     outline: 2px solid var(--blue-400);
 }
 
-.product-desc__common-info-list {}
+.product-desc__common-info-table {
+    border: none;
+    margin-bottom: 12px;
+    color: var(--black);
+}
 
-.product-desc__common-info-list-item {}
+.product-desc__common-info-table-termin {
+    padding-right: 15px;
+}
 
-.product-desc__common-more-link {}
+.product-desc__common-info-list-desc {}
+
+
+.product-desc__common-more-link {
+    display: inline-block;
+    margin-bottom: 46px;
+    line-height: 1.37;
+    text-decoration: underline;
+    color: var(--blue-400);
+}
+
+.product-desc__common-more-link:hover,
+.product-desc__common-more-link:focus {
+    opacity: 0.5;
+}
+
+
+.product-desc__common-more-link:active {
+    opacity: 0.1;
+}
