@@ -1286,6 +1286,7 @@ img {
 /*---------------------------------------------------------*/
 .deployed-product {
     display: flex;
+    margin-bottom: 298px;
 }
 
 .deployed-product__gallery {
