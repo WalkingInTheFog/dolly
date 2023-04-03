@@ -1646,10 +1646,9 @@ img {
 
 .product-desc__common-info-list-desc {}
 
-
 .product-desc__common-more-link {
     display: inline-block;
-    margin-bottom: 46px;
+    margin-bottom: 50px;
     line-height: 1.37;
     text-decoration: underline;
     color: var(--blue-400);
@@ -1660,7 +1659,11 @@ img {
     opacity: 0.5;
 }
 
-
 .product-desc__common-more-link:active {
     opacity: 0.1;
+}
+
+.product-desc__buy-btn {
+    display: block;
+    max-width: 188px;
 }
