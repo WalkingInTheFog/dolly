@@ -38,6 +38,23 @@ productLeftBtn.addEventListener('click', function (evt) {
 
 productRightBtn.addEventListener('click', function (evt) {
 
+    if (productSlides.classList.contains(productFirstSlideClass)) {
 
+        productSlides.classList.remove(productFirstSlideClass);
+
+        productSlides.classList.add(productThirtSlideClass);
+
+    } else if (productSlides.classList.contains(productThirtSlideClass)) {
+
+        productSlides.classList.remove(productThirtSlideClass);
+
+        productSlides.classList.add(productSecondSlideClass);
+
+    } else if (productSlides.classList.contains(productSecondSlideClass)) {
+
+        productSlides.classList.remove(productSecondSlideClass);
+
+        productSlides.classList.add(productFirstSlideClass);
+    }
 
 });
