@@ -811,13 +811,6 @@ img {
     margin-right: auto;
 }
 
-/* 
-.main-logo__link-wrap {}
-
-.main-logo {}
- */
-
-
 .nav-list-footer {
     max-width: 670px;
     margin-left: -25px;
@@ -1222,10 +1215,6 @@ img {
     grid-template-columns: min-content min-content;
     column-gap: 30px;
 }
-
-.filters-form__brand-item {}
-
-.filters-form__brand-input {}
 
 .filters-form__brand-label {
     position: relative;
@@ -1661,8 +1650,6 @@ img {
 .product-desc__common-info-table-termin {
     padding-right: 15px;
 }
-
-.product-desc__common-info-list-desc {}
 
 .product-desc__common-more-link {
     display: inline-block;
