@@ -1313,6 +1313,7 @@ img {
 .deployed-product__gallery-list {
     width: 1974px;
     display: flex;
+    transition: all 0.5s;
 }
 
 .deployed-product__gallery-item {
