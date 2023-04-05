@@ -1312,10 +1312,25 @@ img {
 
 .deployed-product__gallery-list {
     position: relative;
-    left: 0;
+
     width: 1974px;
     display: flex;
     transition: all 0.5s;
+}
+
+
+.deployed-product__gallery-list--first {
+    left: 0;
+}
+
+.deployed-product__gallery-list--second {
+
+    left: -658px;
+
+}
+
+.deployed-product__gallery-list--third {
+    left: -1316px;
 }
 
 .deployed-product__gallery-item {
