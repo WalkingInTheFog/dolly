@@ -1311,6 +1311,8 @@ img {
 }
 
 .deployed-product__gallery-list {
+    position: relative;
+    left: 0;
     width: 1974px;
     display: flex;
     transition: all 0.5s;
