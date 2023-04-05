@@ -763,8 +763,8 @@ img {
     transition: all 0.5s;
 }
 
-.popular-slider-controls__btn:hover,
-.popular-slider-controls__btn:focus {
+.popular-slider-controls__btn--right:hover,
+.popular-slider-controls__btn--right:focus {
 
     transform: scale(1.2);
 }
@@ -775,6 +775,13 @@ img {
 
 .popular-slider-controls__btn--left {
     transform: rotate(180deg);
+}
+
+.popular-slider-controls__btn--left:hover,
+.popular-slider-controls__btn--left:focus {
+
+    transform: rotate(180deg) scale(1.2);
+
 }
 
 .popular__view-more {
