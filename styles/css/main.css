@@ -98,9 +98,9 @@ img {
 .page-body--index::after {
     content: '';
     position: absolute;
-    left: 48%;
+    left: 47.75%;
     top: 0;
-    width: 52%;
+    width: 52.25%;
     height: 100%;
     background-color: var(--blue-300);
     z-index: -1;
