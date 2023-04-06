@@ -1,5 +1,8 @@
 let productGallery = document.querySelector('.deployed-product__gallery');
 
+let popular = document.querySelector('.popular');
+
+/*Функционал галереи продукта */
 
 if (productGallery) {
 
@@ -138,4 +141,54 @@ if (productGallery) {
 
     }
 
+}
+
+/*Функционал галереи поп товаров */
+
+if (popular) {
+
+    let popularLeftBtn = popular.querySelector('.popular-slider-controls__btn--left');
+    let popularRightBtn = popular.querySelector('.popular-slider-controls__btn--right');
+    let popularSliderList = popular.querySelector('.popular-slider-list');
+
+    let popularFirstSlideClass = 'popular-slider-list--first-slide';
+    let popularSecondSlideClass = 'popular-slider-list--second-slide';
+
+
+    popularLeftBtn.addEventListener('click', function (evt) {
+
+        if (popularSliderList.classList.contains(popularFirstSlideClass)) {
+
+            popularSliderList.classList.remove(popularFirstSlideClass);
+
+            popularSliderList.classList.add(popularSecondSlideClass);
+
+        } else if (popularSliderList.classList.contains(popularSecondSlideClass)) {
+
+            popularSliderList.classList.remove(popularSecondSlideClass);
+
+            popularSliderList.classList.add(popularFirstSlideClass);
+
+        }
+
+    });
+
+
+    popularRightBtn.addEventListener('click', function (evt) {
+
+        if (popularSliderList.classList.contains(popularFirstSlideClass)) {
+
+            popularSliderList.classList.remove(popularFirstSlideClass);
+
+            popularSliderList.classList.add(popularSecondSlideClass);
+
+        } else if (popularSliderList.classList.contains(popularSecondSlideClass)) {
+
+            popularSliderList.classList.remove(popularSecondSlideClass);
+
+            popularSliderList.classList.add(popularFirstSlideClass);
+
+        }
+
+    });
 }
