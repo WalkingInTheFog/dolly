@@ -2,6 +2,8 @@ let productGallery = document.querySelector('.deployed-product__gallery');
 
 let popular = document.querySelector('.popular');
 
+let everyDay = document.querySelector('.every-day');
+
 /*Функционал галереи продукта */
 
 if (productGallery) {
@@ -191,4 +193,121 @@ if (popular) {
         }
 
     });
+}
+
+/*Функционал галереи коллекции на каждый день */
+
+if (everyDay) {
+
+    var everyDayBtns = everyDay.querySelectorAll('.every-day__slider-thumb-item');
+
+    let everyDaySlideList = everyDay.querySelector('.every-day__big-photo-list');
+
+    var everyDayIndicators = everyDay.querySelectorAll('.every-day__slider-indication-item');
+
+    let everyDayFirstSlideClass = 'every-day__big-photo-list--first';
+    let everyDaySecondSlideClass = 'every-day__big-photo-list--second';
+    let everyDayThirtSlideClass = 'every-day__big-photo-list--thirt';
+    let everyDayFourSlideClass = 'every-day__big-photo-list--four';
+    let everyDayActiveIndicatorClass = ('every-day__slider-indication-item--active');
+
+    let hideClass = 'display-none';
+
+
+    let DelHideClass = function (elements, HideClass) {
+
+        for (let i = 0; i < elements.length; i++) {
+
+
+            elements[i].classList.remove(HideClass);
+
+        }
+
+    }
+
+    let everyDayIndication = function (indicators, IndicationClass, currentPosition) {
+
+        for (let i = 0; i < indicators.length; i++) {
+
+            indicators[i].classList.remove(IndicationClass);
+
+        }
+
+        currentPosition = Number(currentPosition);
+        currentPosition -= 1;
+
+        indicators[currentPosition].classList.add(IndicationClass);
+
+    }
+
+
+    for (let btn = 0; btn < everyDayBtns.length; btn++) {
+
+        everyDayBtns[btn].addEventListener('click', function (evt) {
+
+            if (everyDayBtns[btn].dataset.number == 1) {
+
+                everyDaySlideList.classList.remove(everyDaySecondSlideClass);
+                everyDaySlideList.classList.remove(everyDayThirtSlideClass);
+                everyDaySlideList.classList.remove(everyDayFourSlideClass);
+
+                everyDaySlideList.classList.add(everyDayFirstSlideClass);
+
+                DelHideClass(everyDayBtns, hideClass);
+
+                everyDayBtns[btn].classList.add(hideClass);
+
+                everyDayIndication(everyDayIndicators, everyDayActiveIndicatorClass, everyDayBtns[btn].dataset.number);
+
+            } else if (everyDayBtns[btn].dataset.number == 2) {
+
+                everyDaySlideList.classList.remove(everyDayFirstSlideClass);
+                everyDaySlideList.classList.remove(everyDayThirtSlideClass);
+                everyDaySlideList.classList.remove(everyDayFourSlideClass);
+
+                everyDaySlideList.classList.add(everyDaySecondSlideClass);
+
+                DelHideClass(everyDayBtns, hideClass);
+
+                everyDayBtns[btn].classList.add(hideClass);
+
+                everyDayIndication(everyDayIndicators, everyDayActiveIndicatorClass, everyDayBtns[btn].dataset.number);
+
+            } else if (everyDayBtns[btn].dataset.number == 3) {
+
+                everyDaySlideList.classList.remove(everyDayFirstSlideClass);
+                everyDaySlideList.classList.remove(everyDaySecondSlideClass);
+                everyDaySlideList.classList.remove(everyDayFourSlideClass);
+
+                everyDaySlideList.classList.add(everyDayThirtSlideClass);
+
+                DelHideClass(everyDayBtns, hideClass);
+
+                everyDayBtns[btn].classList.add(hideClass);
+
+                everyDayIndication(everyDayIndicators, everyDayActiveIndicatorClass, everyDayBtns[btn].dataset.number);
+
+            } else if (everyDayBtns[btn].dataset.number == 4) {
+
+                everyDaySlideList.classList.remove(everyDayFirstSlideClass);
+                everyDaySlideList.classList.remove(everyDaySecondSlideClass);
+                everyDaySlideList.classList.remove(everyDayThirtSlideClass);
+
+                everyDaySlideList.classList.add(everyDayFourSlideClass);
+
+                DelHideClass(everyDayBtns, hideClass);
+
+                everyDayBtns[btn].classList.add(hideClass);
+                everyDayIndication(everyDayIndicators, everyDayActiveIndicatorClass, everyDayBtns[btn].dataset.number);
+            }
+
+
+        });
+
+
+
+
+
+    }
+
 }
