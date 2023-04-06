@@ -659,17 +659,29 @@ img {
     overflow: hidden;
     padding-top: 15px;
     padding-bottom: 15px;
+
 }
 
 .popular-slider-list {
+    position: relative;
 
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    transition: all 0.5s;
-    padding-left: 15px;
 
+    padding-left: 15px;
+    transition: all 0.5s;
 }
+
+.popular-slider-list--first-slide {
+    left: 0;
+}
+
+.popular-slider-list--second-slide {
+
+    left: -1170px;
+}
+
 
 .popular-slider-list__item {
     min-width: 264px;
