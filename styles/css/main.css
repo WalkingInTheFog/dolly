@@ -945,6 +945,8 @@ img {
 
 .catalog-filters {
     grid-column: 1/2;
+    word-wrap: break-word;
+    max-width: 196px;
 }
 
 .catalog-wrapper {
@@ -1057,15 +1059,26 @@ img {
 }
 
 /*-----------------filters----------*/
+.filters-form {
+    max-width: 196px;
+    word-wrap: break-word;
+}
 
 .filters-form__filedset {
     border: none;
     padding: 0;
     margin-bottom: 50px;
-
+    max-width: 196px;
+    word-wrap: break-word;
+    display: block;
 }
 
 .filters-form__title {
+    display: block;
+    max-width: 196px;
+    word-wrap: break-word;
+
+
     margin: 0;
     margin-bottom: 35px;
     padding: 0;
@@ -1079,7 +1092,8 @@ img {
 .filters-form__category-item {
     margin: 0;
     margin-bottom: 7px;
-
+    max-width: 196px;
+    word-wrap: break-word;
 }
 
 
@@ -1153,6 +1167,7 @@ img {
     line-height: 1.333;
     color: var(--black);
     text-transform: lowercase;
+
 }
 
 .filters-form__range-field {
