@@ -509,8 +509,24 @@ img {
     width: 1612px;
     height: 632px;
     display: flex;
+    transition: all 0.5s;
 }
 
+.every-day__big-photo-list--first {
+    left: 0;
+}
+
+.every-day__big-photo-list--second {
+    left: -403px;
+}
+
+.every-day__big-photo-list--thirt {
+    left: -806px;
+}
+
+.every-day__big-photo-list--four {
+    left: -1209px;
+}
 
 
 .every-day__slider-thumb-wrapper {
