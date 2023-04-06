@@ -132,7 +132,8 @@ img {
     display: inline-block;
     padding: 22px 55px;
     margin: 0;
-    max-width: 212px;
+    max-width: 215px;
+    width: 212px;
     overflow-wrap: break-word;
 
     font-family: 'Open Sans', 'Arial', sans-serif;
@@ -207,7 +208,7 @@ img {
 
 .main-nav {
     padding-top: 50px;
-    padding-bottom: 50px;
+
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -345,7 +346,7 @@ img {
 /*----------------------------------------lead block----------------------------------------------------*/
 .index-lead {
     position: relative;
-    padding-top: 200px;
+    padding-top: 246px;
     margin-bottom: 97px;
 }
 
@@ -356,8 +357,8 @@ img {
 .index-lead__inner::after {
     content: '';
     position: absolute;
-    left: 0;
-    top: 440px;
+    left: 15px;
+    top: 445px;
     width: 19px;
     height: 120px;
     background-image: url('../../images/lead-arrow-down.svg');
@@ -368,11 +369,11 @@ img {
 
 .index-lead__title {
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 61px;
     max-width: 530px;
     font-weight: 700;
     font-size: 60px;
-    line-height: 1.333;
+    line-height: 1.35;
 }
 
 /*--------------------------------winter collection------------------------------------*/
