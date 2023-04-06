@@ -211,17 +211,18 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+
 }
 
 .main-logo__link-wrap {
     margin-right: 64px;
+    margin-left: 4px;
 }
 
 .nav-list {
     max-width: 825px;
-    margin-right: -30px;
-    margin-left: -30px;
+    margin-right: -32px;
+    margin-left: -32px;
 
     display: flex;
     flex-direction: row;
@@ -232,8 +233,8 @@ img {
 }
 
 .nav-list__item {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 32px;
+    margin-right: 32px;
     margin-bottom: 10px;
 }
 
@@ -280,37 +281,32 @@ img {
     opacity: 0.6;
 }
 
-
 .user-panel-list {
-    max-width: 100px;
+    /* max-width: 110px; */
+    width: 112px;
     margin-left: auto;
-
+    padding-left: 9px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
 .user-panel-list__item {
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-right: 16px;
 }
 
-.user-panel-list__item:first-child {
-
-    margin-left: 0;
-}
+.user-panel-list__item:first-child {}
 
 .user-panel-list__item:last-child {
-
     margin-right: 0;
 }
 
 .user-panel-list___link {
     display: block;
-    width: 22px;
-    height: 22px;
+    width: 25px;
+    height: 24px;
     background-repeat: no-repeat;
     background-position: center center;
     text-decoration: none;
@@ -332,17 +328,18 @@ img {
 
 .user-panel-list___link--favorites {
     background-image: url('../../images/heart-icon.svg');
-    background-size: 22px 19px;
+    background-size: 25px 22px;
 }
 
 .user-panel-list___link--login {
     background-image: url('../../images/user-icon.svg');
-    background-size: 20px 20px;
+    background-size: 22px 22px;
 }
 
 .user-panel-list___link--basket {
+    width: 20px;
     background-image: url('../../images/basket-icon.svg');
-    background-size: 16px 20px;
+    background-size: 20px 24px;
 }
 
 /*----------------------------------------lead block----------------------------------------------------*/
