@@ -298,8 +298,6 @@ img {
     margin-right: 16px;
 }
 
-.user-panel-list__item:first-child {}
-
 .user-panel-list__item:last-child {
     margin-right: 0;
 }
@@ -347,7 +345,7 @@ img {
 .index-lead {
     position: relative;
     padding-top: 246px;
-    margin-bottom: 97px;
+    margin-bottom: 121px;
 }
 
 .index-lead__inner {
@@ -389,14 +387,14 @@ img {
     background-image: url('../../images/winter-look.png');
     background-repeat: no-repeat;
     background-size: 664px 501px;
-    background-position: 0 0;
+    background-position: 15px 0;
 }
 
 .winter-collection::before {
     content: 'зима';
     position: absolute;
-    top: -396px;
-    left: -218px;
+    top: -159px;
+    left: -215px;
     color: var(--gray-300);
 
     font-family: 'Open Sans', 'Arial', sans-serif;
@@ -412,10 +410,10 @@ img {
 
 .winter-collection__inner {
     margin-left: auto;
-
+    width: 404px;
 }
 
-.winter-collection__title {
+.winter-collection__inner .winter-collection__title {
     margin: 0;
     margin-bottom: 20px;
 }
@@ -423,6 +421,9 @@ img {
 .winter-collection__desc {
     margin: 0;
     margin-bottom: 50px;
+
+    font-size: 20px;
+    line-height: 1.35;
 
 }
 
