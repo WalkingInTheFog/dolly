@@ -612,7 +612,7 @@ img {
     background-image: url('../../images/strict-collection.png');
     background-repeat: no-repeat;
     background-size: 591px 545px;
-    background-position: left center;
+    background-position: 17px center;
 }
 
 .strict__inner {
@@ -622,15 +622,15 @@ img {
     margin-left: auto;
     padding-left: 125px;
     padding-right: 64px;
-    padding-top: 93px;
+    padding-top: 94px;
 }
 
 .strict__inner::after {
     content: '';
     position: absolute;
-    left: -454px;
+    left: -482px;
     top: -49px;
-    width: 1px;
+    width: 2px;
     height: 276px;
     background-color: var(--black);
 }
@@ -645,7 +645,7 @@ img {
     margin-bottom: 50px;
 
     font-size: 20px;
-    line-height: 1.35;
+    line-height: 1.6;
 }
 
 /*-------------popular----------------------------------------------------------------------*/
