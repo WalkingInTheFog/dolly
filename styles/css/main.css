@@ -1331,7 +1331,7 @@ img {
 .pagination-list {
 
     display: flex;
-    margin-bottom: 61px;
+    margin-bottom: 58px;
 }
 
 .pagination-list__item {
@@ -1339,6 +1339,8 @@ img {
 }
 
 .pagination-list__link {
+    display: inline-block;
+    width: initial;
     border: none;
     padding: 10px 17px;
 }
