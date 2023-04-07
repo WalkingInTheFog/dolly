@@ -1078,10 +1078,15 @@ img {
 .filters-form__filedset {
     border: none;
     padding: 0;
+    margin: 0;
     margin-bottom: 50px;
     max-width: 196px;
     word-wrap: break-word;
     display: block;
+}
+
+.filters-form__filedset--category {
+    margin-bottom: 46px;
 }
 
 .filters-form__title {
@@ -1091,7 +1096,7 @@ img {
 
 
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     padding: 0;
     padding-left: 9px;
     color: var(--black-350);
@@ -1102,7 +1107,7 @@ img {
 
 .filters-form__category-item {
     margin: 0;
-    margin-bottom: 7px;
+    margin-bottom: 1px;
     max-width: 196px;
     word-wrap: break-word;
 }
@@ -1139,7 +1144,7 @@ img {
 /*------------filter--range------------------*/
 
 .filters-form__title--range {
-    margin-bottom: 24px;
+    margin-bottom: 18px;
 }
 
 .filters-form__range-fiter {
@@ -1174,12 +1179,14 @@ img {
 }
 
 .filters-form__range-label {
+    margin-left: 9px;
     font-size: 12px;
     line-height: 1.333;
     color: var(--black);
     text-transform: lowercase;
 
 }
+
 
 .filters-form__range-field {
     max-width: 44px;
