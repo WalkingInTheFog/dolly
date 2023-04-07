@@ -449,7 +449,7 @@ img {
     overflow-wrap: break-word;
 
     margin-left: auto;
-    padding-top: 65px;
+    padding-top: 71px;
     padding-left: 79px;
     padding-right: 123px;
     padding-bottom: 66px;
@@ -459,10 +459,10 @@ img {
 .every-day__inner::before {
     content: '';
     position: absolute;
-    left: 0;
+    left: -1px;
     top: -161px;
     height: 513px;
-    width: 1px;
+    width: 2px;
     background-color: var(--black);
 
 }
@@ -470,9 +470,8 @@ img {
 .every-day__inner::after {
     content: "D";
     position: absolute;
-    left: -270px;
-    top: 205px;
-
+    left: -269px;
+    top: 243px;
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -482,15 +481,15 @@ img {
 
 }
 
-.every-day__title {
+.every-day__inner .every-day__title {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 }
 
 .every-day__desc {
     margin: 0;
     font-size: 20px;
-    line-height: 1.35;
+    line-height: 1.67;
 
 }
 
@@ -549,7 +548,9 @@ img {
 .every-day__slider-thumb-item {
     max-width: 116px;
     max-height: 155px;
-
+    width: 116px;
+    height: 155px;
+    padding: 0;
 
     margin-right: 10px;
     cursor: pointer;
@@ -559,6 +560,7 @@ img {
     animation-fill-mode: backwards;
 
 }
+
 
 .every-day__slider-thumb-item:hover,
 .every-day__slider-thumb-item:focus {
@@ -584,7 +586,7 @@ img {
 }
 
 .every-day__slider-indication-item {
-    margin-right: 11px;
+    margin-right: 10px;
     border: none;
     width: 7px;
     height: 7px;
