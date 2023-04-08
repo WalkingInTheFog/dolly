@@ -112,7 +112,7 @@ img {
     position: absolute;
     left: 0;
     top: 0;
-    width: 51%;
+    width: 52%;
     height: 100%;
     background-color: var(--blue-300);
     z-index: -1;
@@ -201,7 +201,7 @@ img {
 
 .page-body__product-page .main-header {
 
-    margin-bottom: 148px;
+    margin-bottom: 133px;
 }
 
 /*---------------------------main-nav----------------------------------------*/
@@ -656,7 +656,7 @@ img {
 }
 
 .page-body__product-page .popular {
-    margin-bottom: 160px;
+    margin-bottom: 158px;
 }
 
 .popular--product-page {
@@ -1362,7 +1362,8 @@ img {
     max-width: 658px;
     width: 658px;
     min-width: 658px;
-    margin-right: 70px;
+    margin-right: 74px;
+    padding-top: 10px;
 }
 
 .deployed-product__gallery-window {
@@ -1552,7 +1553,7 @@ img {
 
 .product-desc__title {
     margin: 0;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
 
     font-weight: 600;
     font-size: 40px;
@@ -1564,7 +1565,9 @@ img {
 
 .product-desc__price {
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
+    padding-left: 5px;
+
     font-weight: 600;
     font-size: 40px;
     line-height: 1.35;
@@ -1587,7 +1590,8 @@ img {
     justify-content: flex-start;
     width: 112px;
     height: 19px;
-    margin-right: 45px;
+    margin-right: 42px;
+    padding-top: 2px;
 }
 
 .product-desc__rating-star {
@@ -1633,6 +1637,7 @@ img {
 .product-desc__sizes {
     display: flex;
     align-items: center;
+    margin-bottom: 3px;
 }
 
 .product-desc__sizes-label {
@@ -1700,7 +1705,7 @@ img {
 .product-desc__colors {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 }
 
 .product-desc__colors-label {
@@ -1742,8 +1747,9 @@ img {
     outline: 2px solid var(--blue-400);
 }
 
-.product-desc__common-info-table {
+/* .product-desc__common-info-table {
     border: none;
+    border-collapse: collapse;
     margin-bottom: 12px;
     color: var(--black);
 }
@@ -1753,12 +1759,33 @@ img {
 }
 
 .product-desc__common-info-table-termin {
-    padding-right: 15px;
+    margin: 0;
+    padding: 0;
+    width: 71px;
+
+}
+ */
+.product-desc__common-info {
+    margin-bottom: 12px;
+    color: var(--black);
+}
+
+.product-desc__common-info-item {
+    display: flex;
+    margin-bottom: 14px;
+}
+
+.product-desc__common-info-item:last-child {
+    margin-bottom: 0;
+}
+
+.product-desc__common-info-termin {
+    width: 71px;
 }
 
 .product-desc__common-more-link {
     display: inline-block;
-    margin-bottom: 50px;
+    margin-bottom: 46px;
     line-height: 1.37;
     text-decoration: underline;
     color: var(--blue-400);
