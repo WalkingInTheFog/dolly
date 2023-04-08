@@ -777,9 +777,9 @@ img {
 .popular-slider-controls {
     display: flex;
     justify-content: space-between;
-    width: 103%;
+    width: 1170px;
     position: absolute;
-    left: -18px;
+
     top: 217px;
 
 }
