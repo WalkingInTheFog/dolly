@@ -129,6 +129,7 @@ img {
 }
 
 .btn {
+    vertical-align: top;
     display: inline-block;
     padding: 22px 55px;
     margin: 0;
@@ -1346,6 +1347,7 @@ img {
 }
 
 .pagination-list__link {
+    vertical-align: top;
     display: inline-block;
     width: initial;
     border: none;
@@ -1684,6 +1686,7 @@ img {
 
 .product-desc__table-sises-link {
     display: inline-block;
+    vertical-align: top;
     margin-bottom: 36px;
     line-height: 1.37;
     text-decoration: underline;
@@ -1785,6 +1788,7 @@ img {
 
 .product-desc__common-more-link {
     display: inline-block;
+    vertical-align: top;
     margin-bottom: 46px;
     line-height: 1.37;
     text-decoration: underline;
